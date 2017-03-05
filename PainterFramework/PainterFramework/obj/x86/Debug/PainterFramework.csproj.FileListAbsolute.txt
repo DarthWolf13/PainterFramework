@@ -18,7 +18,6 @@ c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFra
 c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\spr_scorebar.xnb
 c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\snd_collect_points.wma
 c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\snd_music.wma
-c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\snd_shoot_paint.wma
 c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\PainterFramework.exe
 c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\PainterFramework.pdb
 c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\GameManagement.dll

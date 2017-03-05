@@ -3,8 +3,6 @@ Content\snd_collect_points.xnb
 Content\snd_collect_points.wma
 Content\snd_music.xnb
 Content\snd_music.wma
-Content\snd_shoot_paint.xnb
-Content\snd_shoot_paint.wma
 Content\spr_background.xnb
 Content\spr_ball_blue.xnb
 Content\spr_ball_green.xnb
@@ -19,3 +17,4 @@ Content\spr_can_red.xnb
 Content\spr_gameover.xnb
 Content\spr_lives.xnb
 Content\spr_scorebar.xnb
+Content\snd_shoot_paint.xnb

@@ -31,16 +31,6 @@
       <Time>2014-11-19T13:24:06+01:00</Time>
     </Item>
     <Item>
-      <Source>snd_shoot_paint.mp3</Source>
-      <Name>snd_shoot_paint</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\snd_shoot_paint.xnb</Output>
-      <Extra>c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\snd_shoot_paint.wma</Extra>
-      <Time>2014-11-19T13:24:06+01:00</Time>
-    </Item>
-    <Item>
       <Source>spr_background.jpg</Source>
       <Name>spr_background</Name>
       <Importer>TextureImporter</Importer>
@@ -164,6 +154,15 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\spr_scorebar.xnb</Output>
+      <Time>2014-11-19T13:24:06+01:00</Time>
+    </Item>
+    <Item>
+      <Source>snd_shoot_paint.mp3</Source>
+      <Name>snd_shoot_paint</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\marti\documents\visual studio 2015\Projects\PainterFramework\PainterFramework\PainterFramework\bin\x86\Debug\Content\snd_shoot_paint.xnb</Output>
       <Time>2014-11-19T13:24:06+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>

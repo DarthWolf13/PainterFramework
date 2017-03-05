@@ -25,6 +25,7 @@ namespace PainterFramework
 
             gameStateManager.AddGameState("playingState", new PainterGameWorld());
             gameStateManager.SwitchTo("playingState");
+            screen = new Point(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
         }
 
     }
