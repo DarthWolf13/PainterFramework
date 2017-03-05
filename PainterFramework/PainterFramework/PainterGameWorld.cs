@@ -11,6 +11,7 @@ namespace PainterFramework
     {
         private RotatableSpriteGameObject cannonBarrel = null;
         private ThreeColorGameObject cannonColor = null;
+        private ThreeColorGameObject can1 = null, can2 = null, can3 = null;
 
         public PainterGameWorld()
         {
@@ -21,9 +22,16 @@ namespace PainterFramework
             cannonColor = new ThreeColorGameObject("spr_cannon_red", "spr_cannon_green", "spr_cannon_blue");
             cannonColor.Position = new Vector2(58, 388);
 
+            can1 = new PaintCan(Color.Red, 450f);
+            can2 = new PaintCan(Color.Green, 575f);
+            can3 = new PaintCan(Color.Blue, 700f);
+
             this.Add(new SpriteGameObject("spr_background"));
             this.Add(cannonBarrel);
             this.Add(cannonColor);
+            this.Add(can1);
+            this.Add(can2);
+            this.Add(can3);
         }
 
         public override void HandleInput(InputHelper inputHelper)
