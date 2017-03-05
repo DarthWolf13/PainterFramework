@@ -26,5 +26,6 @@ namespace PainterFramework
             gameStateManager.AddGameState("playingState", new PainterGameWorld());
             gameStateManager.SwitchTo("playingState");
         }
+
     }
 }

@@ -79,6 +79,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PainterFramework.cs" />
+    <Compile Include="RotatableSpriteGameObject.cs" />
+    <Compile Include="ThreeColorGameObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
