@@ -36,7 +36,7 @@ namespace PainterFramework
             if (!visible || spriteBatch == null)
                 return;
 
-            spriteBatch.Draw(sprite.Sprite, this.GlobalPosition, null, Color.White, angle, this.Origin, 10.0f, SpriteEffects.None, 0);
+            spriteBatch.Draw(sprite.Sprite, new Rectangle((int)this.GlobalPosition.X, (int)this.GlobalPosition.Y, sprite.Width, sprite.Height), null, Color.White, angle, this.Origin, SpriteEffects.None, 0);
         }
     }
 }
