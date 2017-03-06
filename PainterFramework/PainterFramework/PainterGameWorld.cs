@@ -16,7 +16,7 @@ namespace PainterFramework
         public int score;
         public int lives;
         public const int maxLives = 3;
-        public TextGameObject scoreText = null;
+        private TextGameObject scoreText = null;
         private GameObjectList livesSprites = null;
 
         public PainterGameWorld()
@@ -35,6 +35,9 @@ namespace PainterFramework
             ball = new Ball();
 
             scoreText = new TextGameObject("GameFont");
+            scoreText.Text = "";
+            scoreText.Position = new Vector2(24, 6);
+
             livesSprites = new GameObjectList();
             for (int lifeNr = 0; lifeNr < maxLives; lifeNr++)
             {
@@ -53,7 +56,7 @@ namespace PainterFramework
             this.Add(can2);
             this.Add(can3);
             this.Add(ball);
-            //this.Add(scoreText);
+            this.Add(scoreText);
             this.Add(livesSprites);
         }
 

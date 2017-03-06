@@ -13,7 +13,7 @@ namespace PainterFramework
         protected float positionOffset;
 
         public PaintCan(Color targetcolor, float positionOffset, string colorRed = "spr_can_red", string colorBlue = "spr_can_blue", string colorGreen = "spr_can_green") 
-            : base(colorRed, colorBlue, colorGreen)
+            : base(colorRed, colorGreen, colorBlue)
         {
             this.positionOffset = positionOffset;
             this.targetcolor = targetcolor;
