@@ -38,6 +38,21 @@ namespace PainterFramework
             }
 
             minVelocity += 0.001f;
+
+            PainterGameWorld pwg = GameWorld as PainterGameWorld;
+            if (pwg.IsOutsideWorld(GlobalPosition))
+            {
+                if (this.targetcolor == this.color)
+                {
+                    pwg.score += 10;
+                    PainterFramework.AssetManager.PlaySound("snd_collect_points");
+                }
+                else pwg.lives--;
+
+                Reset();
+            }
+                
+
             base.Update(gameTime);
         }
 

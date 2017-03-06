@@ -13,6 +13,11 @@ namespace PainterFramework
         private ThreeColorGameObject cannonColor = null;
         private ThreeColorGameObject can1 = null, can2 = null, can3 = null;
         private Ball ball = null;
+        public int score;
+        public int lives;
+        public const int maxLives = 3;
+        public TextGameObject scoreText = null;
+        private GameObjectList livesSprites = null;
 
         public PainterGameWorld()
         {
@@ -29,6 +34,18 @@ namespace PainterFramework
 
             ball = new Ball();
 
+            scoreText = new TextGameObject("GameFont");
+            livesSprites = new GameObjectList();
+            for (int lifeNr = 0; lifeNr < maxLives; lifeNr++)
+            {
+                SpriteGameObject life = new SpriteGameObject("spr_lives", 0, lifeNr.ToString());
+                life.Position = new Vector2(lifeNr * life.BoundingBox.Width, 30);
+                livesSprites.Add(life);
+            }
+
+            this.score = 0;
+            this.lives = maxLives;
+
             this.Add(new SpriteGameObject("spr_background"));
             this.Add(cannonBarrel);
             this.Add(cannonColor);
@@ -36,6 +53,8 @@ namespace PainterFramework
             this.Add(can2);
             this.Add(can3);
             this.Add(ball);
+            //this.Add(scoreText);
+            this.Add(livesSprites);
         }
 
         public override void HandleInput(InputHelper inputHelper)
@@ -87,24 +106,29 @@ namespace PainterFramework
 
         /*public int Score
         {
-            get
-            {
-                return score;
-            }
+            get {return score;}
             set
             {
-                lives = value;
+                score = value;
+                if (scoreText != null)
+                    scoreText.Text = "Score" + value;
             }
         }
 
         public int Lives
         {
-            get
-            {
-                return lives;
-            }
+            get {return lives;}
             set
             {
+                if (value > maxLives)
+                    return;
+
+                for (int lifeNr = 0; lifeNr < maxLives; lifeNr++)
+                {
+                    SpriteGameObject sgo = (SpriteGameObject)livesSprites.Find(lifeNr.ToString());
+                    sgo.Visible = (lifeNr < value);
+                }
+
                 lives = value;
             }
         }*/
