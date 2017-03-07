@@ -51,7 +51,8 @@ namespace PainterFramework
 
                 Reset();
             }
-                
+
+            Angle = (float)Math.Sin(position.Y / 50.0f) * 0.1f;
 
             base.Update(gameTime);
         }
