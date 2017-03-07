@@ -35,8 +35,9 @@ namespace PainterFramework
             ball = new Ball();
 
             scoreText = new TextGameObject("GameFont");
-            scoreText.Text = "";
+            scoreText.Text = "Score: 0";
             scoreText.Position = new Vector2(24, 6);
+            SpriteGameObject scoreBar = new SpriteGameObject("spr_scorebar");
 
             livesSprites = new GameObjectList();
             for (int lifeNr = 0; lifeNr < maxLives; lifeNr++)
@@ -56,6 +57,7 @@ namespace PainterFramework
             this.Add(can2);
             this.Add(can3);
             this.Add(ball);
+            this.Add(scoreBar);
             this.Add(scoreText);
             this.Add(livesSprites);
         }
@@ -95,19 +97,25 @@ namespace PainterFramework
             }
             if (ball.CollidesWith(can2))
             {
-                can1.Color = ball.Color;
+                can2.Color = ball.Color;
                 ball.Reset();
             }
             if (ball.CollidesWith(can3))
             {
-                can1.Color = ball.Color;
+                can3.Color = ball.Color;
                 ball.Reset();
+            }
+
+            if (this.lives <= 0)
+            {
+                this.Reset();
+                PainterFramework.GameStateManager.SwitchTo("gameoverState");
             }
 
             base.Update(gameTime);
         }
 
-        /*public int Score
+        public int Score
         {
             get {return score;}
             set
@@ -134,6 +142,6 @@ namespace PainterFramework
 
                 lives = value;
             }
-        }*/
+        }
     }
 }

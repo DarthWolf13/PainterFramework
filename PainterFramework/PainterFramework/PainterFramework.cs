@@ -13,6 +13,7 @@ namespace PainterFramework
 {
     public class PainterFramework : GameEnvironment
     {
+
         public PainterFramework()
         {
             Content.RootDirectory = "Content";
@@ -24,6 +25,7 @@ namespace PainterFramework
             base.LoadContent();
 
             gameStateManager.AddGameState("playingState", new PainterGameWorld());
+            gameStateManager.AddGameState("gameoverState", new PainterGameWorld());
             gameStateManager.SwitchTo("playingState");
             screen = new Point(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
             AssetManager.PlayMusic("snd_music");

@@ -1,6 +1,4 @@
 Content\GameFont.xnb
-Content\snd_collect_points.xnb
-Content\snd_collect_points.wma
 Content\snd_music.xnb
 Content\snd_music.wma
 Content\spr_background.xnb
@@ -18,3 +16,5 @@ Content\spr_gameover.xnb
 Content\spr_lives.xnb
 Content\spr_scorebar.xnb
 Content\snd_shoot_paint.xnb
+Content\snd_collect_points.xnb
+Content\snd_collect_points.wma
